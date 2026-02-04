@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Proposition commerciale pour Les Pétroles Maurice - Solutions électriques pour stations-service et bornes de recharge EV.">
+<title>Proposition - Les Pétroles Maurice</title>
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://alliancegagnante.ca/">
+
+<!-- Meta robots -->
+<meta name="robots" content="index, follow">
+
+<!-- Theme color -->
+<meta name="theme-color" content="#0a0a12">
+
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="shortcut icon" href="favicon.ico">
+
+<!-- PWA Manifest -->
+<link rel="manifest" href="manifest.json">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Alliance Gagnante">
+<link rel="apple-touch-icon" href="assets/icons/icon-192x192.png">
+
+<!-- Open Graph meta tags -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://alliancegagnante.ca/">
+<meta property="og:title" content="Proposition - Les Pétroles Maurice">
+<meta property="og:description" content="Trois expertises complémentaires en électricité haute tension, systèmes critiques et construction au Québec.">
+<meta property="og:image" content="https://alliancegagnante.ca/assets/images/img_25.webp">
+<meta property="og:locale" content="fr_CA">
+
+<!-- Twitter Cards meta tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="L'Alliance Gagnante">
+<meta name="twitter:description" content="Trois expertises. Une synergie parfaite.">
+<meta name="twitter:image" content="https://alliancegagnante.ca/assets/images/img_25.webp">
+
+<!-- Preconnect for performance -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com">
+<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/reveal.min.css" integrity="sha512-1vDOkqtCXgcn0zgLIrxVjSIHvXOB/Ho2k33zwIDMqStDdHWvQyVU+BGG2fK4nnOgDbg0jEzVqzTYTL65orMyWw==" crossorigin="anonymous">
+<style id="purple-arrows">
+  /* Purple navigation arrows - must override Reveal.js */
+  html .reveal .controls .controls-arrow::before,
+  html .reveal .controls .controls-arrow::after {
+    background-color: #9333ea !important;
+  }
+  html .reveal .controls button:hover .controls-arrow::before,
+  html .reveal .controls button:hover .controls-arrow::after {
+    background-color: #a855f7 !important;
+  }
+</style>
+<link rel="stylesheet" href="v15_enhancements.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+<style>
+:root { --dr: #E63946; --sip: #1D9BF0; --br: #F77F00; --dark: #0a0a12; --green: #22c55e; }
+.logo-header { height: 80px; margin-bottom: 20px; border-radius: 8px; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { overflow: hidden; background: var(--dark); }
+.reveal { font-family: Montserrat, sans-serif; background: var(--dark); }
+.reveal .slides { width: 100% !important; height: 100% !important; }
+.reveal .slides > section { width: 100% !important; height: 100% !important; padding: 0 !important; overflow: hidden; background: var(--dark); }
+
+@keyframes fadeUp { from { opacity: 0; transform: translateY(50px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeLeft { from { opacity: 0; transform: translateX(-80px); } to { opacity: 1; transform: translateX(0); } }
+@keyframes scaleIn { from { opacity: 0; transform: scale(0.8); } to { opacity: 1; transform: scale(1); } }
+@keyframes gradientFlow { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+@keyframes particleFloat { 0% { transform: translateY(100vh) rotate(0deg); opacity: 0; } 10% { opacity: 1; } 90% { opacity: 1; } 100% { transform: translateY(-100vh) rotate(720deg); opacity: 0; } }
+
+.reveal .present h1, .reveal .present h2 { animation: fadeUp 0.8s ease-out; }
+.reveal .present p { animation: fadeUp 1s ease-out 0.2s both; }
+.reveal .present .card { animation: scaleIn 0.6s ease-out both; }
+.reveal .present .card:nth-child(1) { animation-delay: 0.1s; }
+.reveal .present .card:nth-child(2) { animation-delay: 0.25s; }
+.reveal .present .card:nth-child(3) { animation-delay: 0.4s; }
+.reveal .present .stat { animation: fadeUp 0.5s ease-out both; }
+.reveal .present .left-panel { animation: fadeLeft 0.8s ease-out; }
+
+.particles { position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; z-index: 0; pointer-events: none; }
+.particle { position: absolute; width: 6px; height: 6px; background: linear-gradient(135deg, var(--dr), var(--sip)); border-radius: 50%; animation: particleFloat linear infinite; }
+
+.bg-cover { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-size: cover; background-position: center; z-index: 0; }
+.bg-cover::after { content: ""; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, rgba(10,10,18,0.85) 0%, rgba(10,10,18,0.6) 100%); }
+.bg-cover.bg-lighter::after { background: linear-gradient(135deg, rgba(10,10,18,0.65) 0%, rgba(10,10,18,0.35) 100%); }
+
+.glass { background: rgba(255,255,255,0.08); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.15); border-radius: 20px; }
+.gradient-text { background: linear-gradient(90deg, var(--dr), var(--sip), var(--br), var(--dr)); background-size: 300% 100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; animation: gradientFlow 4s ease infinite; }
+
+.content { position: relative; z-index: 1; width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: clamp(20px, 4vh, 60px); }
+.content-left { align-items: flex-start; padding-left: clamp(30px, 6vw, 100px); }
+
+h1 { font-size: clamp(2rem, 5vw, 4rem); font-weight: 900; text-transform: uppercase; letter-spacing: 0.05em; color: white; text-shadow: 0 0 60px rgba(0,0,0,0.8); }
+h2 { font-size: clamp(1.5rem, 3.5vw, 2.8rem); font-weight: 900; text-transform: uppercase; color: white; text-shadow: 0 0 40px rgba(0,0,0,0.8); }
+h3 { font-size: clamp(1rem, 2vw, 1.5rem); font-weight: 300; color: #ffffff; }
+p { font-size: clamp(0.8rem, 1.3vw, 1.1rem); color: #ffffff; line-height: 1.6; max-width: 600px; }
+
+.outline { -webkit-text-stroke: 2px white; color: transparent; }
+.bar { height: 4px; width: clamp(100px, 20vw, 250px); background: linear-gradient(90deg, var(--dr), var(--sip), var(--br)); border-radius: 2px; margin: 15px 0; box-shadow: 0 0 20px rgba(230,57,70,0.5); }
+
+.cards { display: flex; gap: clamp(10px, 2vw, 25px); flex-wrap: wrap; justify-content: center; margin-top: clamp(15px, 3vh, 40px); }
+.card { flex: 1; min-width: clamp(160px, 25vw, 280px); max-width: 300px; border-radius: 16px; overflow: hidden; background: rgba(0,0,0,0.5); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.15); transition: transform 0.3s, box-shadow 0.3s; }
+.card:hover { transform: translateY(-10px) scale(1.02); box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
+.card img { width: 100%; height: clamp(100px, 15vh, 180px); object-fit: cover; }
+.card-body { padding: clamp(12px, 2vh, 20px); text-align: center; }
+.card-body h3 { font-weight: 700; margin-bottom: 5px; color: #ffffff; }
+.card-body p { font-size: clamp(0.65rem, 1vw, 0.85rem); color: #ffffff; margin: 3px 0; }
+.card-dr { border-bottom: 3px solid var(--dr); }
+.card-sip { border-bottom: 3px solid var(--sip); }
+.card-br { border-bottom: 3px solid var(--br); }
+
+.stats { display: flex; gap: clamp(10px, 2vw, 25px); flex-wrap: wrap; justify-content: center; margin-top: clamp(15px, 3vh, 40px); }
+.stat { padding: clamp(15px, 3vh, 35px) clamp(20px, 3vw, 45px); border-radius: 16px; text-align: center; background: rgba(0,0,0,0.4); backdrop-filter: blur(15px); border: 1px solid rgba(255,255,255,0.15); transition: transform 0.3s; }
+.stat:hover { transform: scale(1.05); }
+.stat-num { font-size: clamp(1.8rem, 4vw, 3.5rem); font-weight: 900; display: block; margin-bottom: 5px; }
+.stat-num.animated { background: linear-gradient(90deg, var(--dr), var(--sip), var(--br), var(--dr)); background-size: 300% 100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; animation: gradientFlow 4s ease infinite; }
+.stat-label { font-size: clamp(0.7rem, 1vw, 0.9rem); color: #ffffff; }
+
+.services { margin-top: clamp(15px, 3vh, 30px); }
+.service { display: flex; align-items: center; padding: clamp(8px, 1.5vh, 15px) clamp(12px, 2vw, 20px); margin: clamp(6px, 1vh, 12px) 0; background: rgba(255,255,255,0.08); border-radius: 12px; border-left: 3px solid; transition: transform 0.3s, background 0.3s; }
+.service:hover { transform: translateX(10px); background: rgba(255,255,255,0.15); }
+.service-icon { font-size: clamp(1rem, 1.5vw, 1.4rem); margin-right: clamp(10px, 1.5vw, 20px); }
+.service span { font-size: clamp(0.7rem, 1vw, 0.85rem); color: #ffffff; }
+
+.left-panel { max-width: min(500px, 50%); padding: clamp(20px, 4vh, 50px); background: linear-gradient(135deg, rgba(0,0,0,0.92), rgba(0,0,0,0.85)); border-radius: 0 30px 30px 0; backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.1); }
+.left-panel h2 { color: #ffffff; }
+.left-panel h3 { color: #ffffff; }
+.left-panel p { color: #ffffff; }
+.accent-bar { width: clamp(70px, 8vw, 90px); height: clamp(50px, 7vh, 80px); border-radius: 8px; margin-bottom: 15px; }
+
+.timeline { display: flex; gap: clamp(20px, 4vw, 50px); flex-wrap: wrap; justify-content: center; margin-top: clamp(20px, 4vh, 50px); }
+.time-item { text-align: center; z-index: 1; }
+.time-year { width: clamp(50px, 7vw, 70px); height: clamp(50px, 7vw, 70px); background: var(--dark); border: 3px solid; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: clamp(0.75rem, 1.2vw, 1rem); margin: 0 auto 10px; transition: transform 0.3s, box-shadow 0.3s; color: #ffffff; }
+.time-year:hover { transform: scale(1.1); box-shadow: 0 0 30px currentColor; }
+.time-item p { font-size: clamp(0.7rem, 1vw, 0.9rem); color: #ffffff; }
+
+.contacts { display: flex; gap: clamp(10px, 2vw, 20px); flex-wrap: wrap; justify-content: center; margin-top: clamp(15px, 3vh, 35px); }
+.contact { flex: 1; min-width: clamp(180px, 25vw, 260px); max-width: 280px; padding: clamp(15px, 2.5vh, 30px); background: rgba(0,0,0,0.5); backdrop-filter: blur(15px); border-radius: 16px; border-top: 4px solid; transition: transform 0.3s; }
+.contact:hover { transform: translateY(-8px); }
+.contact h3 { font-size: clamp(1rem, 1.5vw, 1.3rem); margin-bottom: 10px; }
+.contact p { font-size: clamp(0.65rem, 0.9vw, 0.8rem); line-height: 1.7; color: #ffffff; }
+
+.badges { display: flex; gap: clamp(10px, 2vw, 20px); flex-wrap: wrap; margin-top: clamp(15px, 3vh, 30px); }
+.badge { padding: clamp(12px, 2vh, 25px) clamp(15px, 2.5vw, 35px); background: rgba(255,255,255,0.08); border-radius: 16px; text-align: center; border: 1px solid rgba(255,255,255,0.15); transition: transform 0.3s; }
+.badge:hover { transform: scale(1.05); }
+.badge-icon { font-size: clamp(1.5rem, 3vw, 2.5rem); margin-bottom: 8px; }
+.badge p { font-size: clamp(0.7rem, 1vw, 0.9rem); margin: 0; color: #ffffff; }
+
+.project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(15px, 2vw, 25px); width: 100%; max-width: 1200px; margin-top: clamp(15px, 3vh, 40px); }
+.project-card { background: rgba(0,0,0,0.5); backdrop-filter: blur(10px); border-radius: 16px; overflow: hidden; border: 1px solid rgba(255,255,255,0.15); transition: transform 0.3s, box-shadow 0.3s; }
+.project-card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
+.project-card img { width: 100%; height: clamp(120px, 18vh, 200px); object-fit: cover; }
+.project-card .info { padding: clamp(12px, 2vh, 20px); }
+.project-card .info h4 { font-size: clamp(0.9rem, 1.3vw, 1.1rem); font-weight: 700; margin-bottom: 8px; }
+.project-card .info p { font-size: clamp(0.7rem, 1vw, 0.85rem); color: rgba(255,255,255,0.85); line-height: 1.5; margin: 0; }
+</style>
+
+<!-- Preload critical images -->
+<link rel="preload" as="image" href="assets/images/img_25.webp">
+
+<!-- SEO JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "L'Alliance Gagnante",
+  "description": "L'alliance entre Groupe DR Électrique, Groupe SIP et Les Habitations BR - Expertise complète en électricité et construction",
+  "url": "https://alliancegagnante.ca/",
+  "logo": "https://alliancegagnante.ca/assets/images/img_25.webp",
+  "sameAs": [
+    "https://dreelectrique.com",
+    "https://groupe-sip.com",
+    "https://habitationsbr.ca"
+  ],
+  "foundingDate": "2019",
+  "brand": [
+    {
+      "@type": "Brand",
+      "name": "Groupe DR Électrique"
+    },
+    {
+      "@type": "Brand",
+      "name": "Groupe SIP"
+    },
+    {
+      "@type": "Brand",
+      "name": "Les Habitations BR"
+    }
+  ],
+  "offers": {
+    "@type": "AggregateOffer",
+    "offerCount": "3",
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Groupe DR Électrique",
+        "description": "Haute tension, excavation et construction électrique commerciale et industrielle"
+      },
+      {
+        "@type": "Offer",
+        "name": "Groupe SIP",
+        "description": "Salles de serveurs, chaînes de montage et systèmes pharmaceutiques"
+      },
+      {
+        "@type": "Offer",
+        "name": "Les Habitations BR",
+        "description": "Construction résidentielle, plomberie et projets multi-résidentiels"
+      }
+    ]
+  }
+}
+</script>
+</head>
+<body>
+<!-- Skip link for accessibility -->
+<a href="index.html#main-content" class="skip-link" style="position:absolute;top:-40px;left:0;background:var(--dr);color:#fff;padding:8px 16px;z-index:10000;transition:top 0.3s;">Aller au contenu principal</a>
+<div class="reveal" role="main" id="main-content" aria-label="Présentation Alliance Gagnante">
+<div class="slides" role="region" aria-label="Slides de la présentation">
+<!-- SLIDE 1 - V8 INTRO -->
+<section>
+<div class="bg-cover" style="background-image: url(assets/images/img_25.webp)"></div>
+<div class="particles">
+<div class="particle" style="left:10%;animation-duration:15s"></div>
+<div class="particle" style="left:25%;animation-duration:12s;animation-delay:2s"></div>
+<div class="particle" style="left:40%;animation-duration:18s;animation-delay:4s"></div>
+<div class="particle" style="left:55%;animation-duration:14s;animation-delay:1s"></div>
+<div class="particle" style="left:70%;animation-duration:16s;animation-delay:3s"></div>
+<div class="particle" style="left:85%;animation-duration:13s;animation-delay:5s"></div>
+</div>
+<div class="content">
+<h1>L'ALLIANCE <span class="outline">GAGNANTE</span></h1>
+<div class="bar"></div>
+<p style="letter-spacing:0.2em;font-weight:300">GROUPE DR ÉLECTRIQUE - GROUPE SIP - GROUPE BR</p>
+<p style="margin-top:10px" class="gradient-text">EXPERTISE - PRECISION - FORCE</p>
+<div style="display: flex; justify-content: center; gap: 25px; margin-top: 30px; align-items: center;">
+<div style="width: 160px; height: 80px; background: rgba(255,255,255,0.95); border-radius: 12px; padding: 6px; display: flex; align-items: center; justify-content: center;">
+<img src="assets/images/img_02.png" alt="GROUPE DR ÉLECTRIQUE" style="max-width: 100%; max-height: 100%; object-fit: contain;" loading="lazy">
+</div>
+<div style="width: 160px; height: 80px; background: rgba(255,255,255,0.95); border-radius: 12px; padding: 12px; display: flex; align-items: center; justify-content: center;">
+<img src="assets/images/img_03.png" alt="GROUPE SIP" style="max-width: 100%; max-height: 100%; object-fit: contain;" loading="lazy">
+</div>
+<div style="width: 160px; height: 80px; background: rgba(255,255,255,0.95); border-radius: 12px; padding: 12px; display: flex; align-items: center; justify-content: center;">
+<img src="assets/images/img_04.png" alt="GROUPE BR" style="max-width: 100%; max-height: 100%; object-fit: contain;" loading="lazy">
+</div>
+</div>
+</div>
+</section>
+<!-- SLIDE CLIENT - PÉTROLES MAURICE -->
+<section>
+<div class="bg-cover" style="background-image: url(assets/images/img_25.webp)"></div>
+<div class="particles">
+<div class="particle" style="left:15%;animation-duration:14s;background:linear-gradient(135deg, #f59e0b, var(--dr))"></div>
+<div class="particle" style="left:50%;animation-duration:16s;animation-delay:2s"></div>
+<div class="particle" style="left:80%;animation-duration:12s;animation-delay:4s"></div>
+</div>
+<div class="content">
+<h3 style="color: #f59e0b; font-size: clamp(1rem, 1.5vw, 1.3rem); letter-spacing: 4px; margin-bottom: 15px;">PROPOSITION COMMERCIALE POUR</h3>
+<h1 style="font-size: clamp(2.5rem, 6vw, 4.5rem);">LES PÉTROLES <span class="outline">MAURICE</span></h1>
+<div class="bar" style="background: linear-gradient(90deg, #f59e0b, var(--dr), var(--sip));"></div>
+<p style="letter-spacing: 0.15em; font-weight: 300; margin-top: 20px;">VOTRE PARTENAIRE ÉLECTRIQUE POUR L'EXPANSION</p>
+<div class="stats" style="margin-top: 40px;">
+<div class="stat"><span class="stat-num" style="color: #f59e0b;">4+</span><span class="stat-label">Stations actuelles</span></div>
+<div class="stat"><span class="stat-num" style="color: var(--green);">1</span><span class="stat-label">Nouvelle station Contrecœur</span></div>
+<div class="stat"><span class="stat-num" style="color: var(--sip);">EV</span><span class="stat-label">Transition énergétique</span></div>
+</div>
+</div>
+</section>
+
+<!-- SLIDE 2 - V8 INTRO -->
+<section>
+<div class="bg-cover" style="background-image: url(assets/images/img_05.webp)"></div>
+<div class="content">
+<h2>NOTRE <span class="gradient-text">ALIGNEMENT</span></h2>
+<p>Trois expertises. Une synergie parfaite.</p>
+<div class="cards">
+<div class="card card-dr"><img src="assets/images/img_24.webp" alt="Groupe DR Electrique - Travaux haute tension et electricite municipale" loading="lazy"><div class="card-body"><h3 style="color:var(--dr)">GROUPE DR</h3><p><strong>L'ENERGIE</strong></p><p>Haute Tension et Municipal</p></div></div>
+<div class="card card-sip"><img src="assets/images/img_07.webp" alt="Groupe SIP - Systemes critiques et centres de donnees" loading="lazy"><div class="card-body"><h3 style="color:var(--sip)">GROUPE SIP</h3><p><strong>LA STRATEGIE</strong></p><p>Systemes Critiques et Data</p></div></div>
+<div class="card card-br"><img src="assets/images/img_08.webp" alt="Les Habitations BR - Construction et genie civil" loading="lazy"><div class="card-body"><h3 style="color:var(--br)">GROUPE BR</h3><p><strong>LE TERRAIN</strong></p><p>Construction et Genie Civil</p></div></div>
+</div>
+</div>
+</section>
+<!-- SLIDE 3 - V8 INTRO -->
+<section>
+<div class="bg-cover" style="background-image: url(assets/images/img_09.webp)"></div>
+<div class="content">
+<h2>NOTRE <span class="gradient-text">HISTOIRE</span></h2>
+<p>Batir l'excellence depuis des decennies</p>
+<div class="timeline">
+<div class="time-item"><div class="time-year" style="border-color:var(--dr);color:var(--dr)">2003</div><p><strong>Fondation</strong><br>DR Electrique</p></div>
+<div class="time-item"><div class="time-year" style="border-color:var(--sip);color:var(--sip)">1998</div><p><strong>Creation</strong><br>Groupe SIP</p></div>
+<div class="time-item"><div class="time-year" style="border-color:var(--br);color:var(--br)">2005</div><p><strong>Lancement</strong><br>Groupe BR</p></div>
+<div class="time-item"><div class="time-year" style="border-color:white;color:white">2021</div><p><strong>Alliance</strong><br>Synergie</p></div>
+<div class="time-item"><div class="time-year" style="border-color:var(--green);color:var(--green)">2025</div><p><strong>Unification</strong><br>Des Groupes</p></div>
+</div>
+</div>
+</section>
+<!-- SLIDE 4 - V9 CONTENT -->
+<section>
+<div class="bg-cover" style="background-image: url(assets/images/img_06.webp)"></div>
+<div class="content">
+<h2>Notre <span class="gradient-text">Alliance</span></h2>
+<div class="bar"></div>
+<p style="text-align: center; max-width: 800px;">Trois entreprises complementaires reunies pour offrir une expertise complete en electricite commerciale, industrielle et residentielle.</p>
+<div class="cards">
+<div class="card card-dr">
+<img src="assets/images/img_12.jpeg" alt="Groupe DR Electrique - Services haute tension et excavation" loading="lazy">
+<div class="card-body">
+<h3 style="color: var(--dr);">GROUPE DR ELECTRIQUE</h3>
+<p>Haute tension (25 000V)</p>
+<p>Service et Excavation</p>
+<p>Construction commerciale/industrielle</p>
+</div>
+</div>
+<div class="card card-sip">
+<img src="assets/images/img_22.jpeg" alt="Groupe SIP - Salles de serveurs et systemes pharmaceutiques" loading="lazy">
+<div class="card-body">
+<h3 style="color: var(--sip);">GROUPE SIP</h3>
+<p>Salles de serveurs</p>
+<p>Chaine de montage</p>
+<p>Pharmaceutique</p>
+</div>
+</div>
+<div class="card card-br">
+<img src="assets/images/img_23.jpeg" alt="Les Habitations BR - Construction residentielle et commerciale" loading="lazy">
+<div class="card-body">
+<h3 style="color: var(--br);">GROUPE BR</h3>
+<p>Condos et Residentiel</p>
+<p>Plomberie</p>
+<p>Construction generale</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SLIDE 5 - L'ÉNERGIE GROUPE DR -->
+<section>
+<div class="bg-cover bg-lighter" style="background-image: url(image_reference.png)"></div>
+<div class="content content-left">
+<div class="left-panel">
+<div class="accent-bar" style="background: white; display: flex; align-items: center; justify-content: center; padding: 8px; border: 2px solid var(--dr); margin-bottom: 20px;">
+<img src="assets/images/img_02.png" alt="Logo DR Électrique" style="width: 100%; height: 100%; object-fit: contain;">
+</div>
+<h2 style="color: var(--dr); font-size: clamp(2rem, 4vw, 3.5rem); margin-bottom: 5px;">L'ÉNERGIE</h2>
+<h3 style="color: white; font-size: clamp(1.2rem, 2.5vw, 2rem); font-weight: 700; margin-bottom: 20px;">GROUPE DR ÉLECTRIQUE</h3>
+<p style="margin-bottom: 30px; line-height: 1.8;">Votre partenaire de confiance sur la Rive-Sud de Montréal. Nous alimentons vos projets avec puissance et précision, 24/7.</p>
+<div class="services">
+<div class="service" style="border-color: var(--dr);"><span class="service-icon">⚡</span><span>Haute tension (25 000V)</span></div>
+<div class="service" style="border-color: var(--dr);"><span class="service-icon">🔧</span><span>Service et Maintenance 24/7</span></div>
+<div class="service" style="border-color: var(--dr);"><span class="service-icon">🏗️</span><span>Excavation</span></div>
+<div class="service" style="border-color: var(--dr);"><span class="service-icon">🏢</span><span>Construction commerciale et industrielle</span></div>
+<div class="service" style="border-color: var(--dr);"><span class="service-icon">🔌</span><span>Bornes de recharge</span></div>
+<div class="service" style="border-color: var(--dr);"><span class="service-icon">💊</span><span>Pharmaceutique</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SLIDE 6 - LA DÉFENSE GROUPE BR -->
+<section>
+<div class="bg-cover" style="background-image: url(br final.png)"></div>
+<div class="content content-left">
+<div class="left-panel">
+<div class="accent-bar" style="background: white; display: flex; align-items: center; justify-content: center; padding: 8px; border: 2px solid var(--br); margin-bottom: 20px;">
+<img src="assets/images/img_04.png" alt="Logo BR" style="width: 100%; height: 100%; object-fit: contain;">
+</div>
+<h2 style="color: var(--br); font-size: clamp(2rem, 4vw, 3.5rem); margin-bottom: 5px;">LUXE & MÉCANIQUE</h2>
+<h3 style="color: white; font-size: clamp(1.2rem, 2.5vw, 2rem); font-weight: 700; margin-bottom: 20px;">GROUPE BR</h3>
+<p style="margin-bottom: 30px; line-height: 1.8;">Maisons de prestige et plomberie commerciale. Luxe sur mesure, maîtrise de la mécanique du bâtiment.</p>
+<div class="services">
+<div class="service" style="border-color: var(--br);"><span class="service-icon">🏛️</span><span>Maisons de prestige</span></div>
+<div class="service" style="border-color: var(--br);"><span class="service-icon">🚰</span><span>Plomberie commerciale</span></div>
+<div class="service" style="border-color: var(--br);"><span class="service-icon">✨</span><span>Luxe sur mesure</span></div>
+<div class="service" style="border-color: var(--br);"><span class="service-icon">🔧</span><span>Mécanique du bâtiment</span></div>
+<div class="service" style="border-color: var(--br);"><span class="service-icon">🏗️</span><span>Construction haut de gamme</span></div>
+<div class="service" style="border-color: var(--br);"><span class="service-icon">⭐</span><span>25 ans d'expertise</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SLIDE 7 - V9 CONTENT -->
+<section>
+<div class="bg-cover" style="background-image: url(assets/images/sip_industrial.jpg)"></div>
+<div class="content content-left">
+<div class="left-panel">
+<div class="accent-bar" style="background: white; display: flex; align-items: center; justify-content: center; padding: 8px; border: 2px solid var(--sip);">
+<img src="assets/images/img_03.png" alt="Logo SIP" style="width: 100%; height: 100%; object-fit: contain;">
+</div>
+<h2 style="color: var(--sip);">GROUPE SIP</h2>
+<p>Travaux electriques specialises et salles de serveurs</p>
+<div class="services">
+<div class="service" style="border-color: var(--sip);"><span class="service-icon">🖥️</span><span>Salles de serveurs et Colocation</span></div>
+<div class="service" style="border-color: var(--sip);"><span class="service-icon">⚙️</span><span>Chaine de montage</span></div>
+<div class="service" style="border-color: var(--sip);"><span class="service-icon">💊</span><span>Pharmaceutique (GEM Pharma)</span></div>
+<div class="service" style="border-color: var(--sip);"><span class="service-icon">🔋</span><span>Moyenne tension</span></div>
+<div class="service" style="border-color: var(--sip);"><span class="service-icon">📡</span><span>Telecommunications</span></div>
+<div class="service" style="border-color: var(--sip);"><span class="service-icon">🔒</span><span>Securite</span></div>
+</div>
+</div>
+</div>
+</section>
+<!-- SLIDE 8 - V9 CONTENT -->
+<section>
+<div class="bg-cover" style="background-image: url(assets/images/img_23.jpeg)"></div>
+<div class="content content-left">
+<div class="left-panel">
+<div class="accent-bar" style="background: white; display: flex; align-items: center; justify-content: center; padding: 8px; border: 2px solid var(--br);">
+<img src="assets/images/img_04.png" alt="Logo BR" style="width: 100%; height: 100%; object-fit: contain;">
+</div>
+<h2 style="color: var(--br);">GROUPE BR</h2>
+<p>Entrepreneur general residentiel et commercial</p>
+<div class="services">
+<div class="service" style="border-color: var(--br);"><span class="service-icon">🏠</span><span>Condos et Residentiel</span></div>
+<div class="service" style="border-color: var(--br);"><span class="service-icon">🚿</span><span>Plomberie</span></div>
+<div class="service" style="border-color: var(--br);"><span class="service-icon">⚡</span><span>Electricite</span></div>
+<div class="service" style="border-color: var(--br);"><span class="service-icon">🔨</span><span>Charpente et Renovation</span></div>
+<div class="service" style="border-color: var(--br);"><span class="service-icon">🏗️</span><span>Construction commerciale</span></div>
+</div>
+</div>
+</div>
+</section>
+<!-- SLIDE 9 - V8 STYLE BACKGROUND -->
+<section>
+<div class="bg-cover" style="background-image: url(assets/images/img_18.webp);"></div>
+<div class="particles"></div>
+<div class="slide-content">
+<h2 class="slide-title" style="color: var(--green);">Virage Vert</h2>
+<p class="slide-subtitle">Notre engagement pour un avenir durable</p>
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 30px; max-width: 900px;">
+<div class="glass" style="padding: 20px; border-radius: 12px; border-left: 4px solid var(--green);">
+<h4 style="color: var(--green); margin-bottom: 10px;">Engagement Ecologique</h4>
+<p style="font-size: 0.95rem;"><strong>Zero papier</strong> - Administration 100% numerique</p>
+</div>
+<div class="glass" style="padding: 20px; border-radius: 12px; border-left: 4px solid var(--green);">
+<h4 style="color: var(--green); margin-bottom: 10px;">Engagement Environnemental</h4>
+<p style="font-size: 0.95rem;"><strong>Gestion des dechets</strong> et materiaux responsables</p>
+</div>
+<div class="glass" style="padding: 20px; border-radius: 12px; border-left: 4px solid var(--green);">
+<h4 style="color: var(--green); margin-bottom: 10px;">Engagement Climatique</h4>
+<p style="font-size: 0.95rem;"><strong>Flotte electrique</strong> - Vehicules de service electrifies</p>
+</div>
+<div class="glass" style="padding: 20px; border-radius: 12px; border-left: 4px solid var(--green);">
+<h4 style="color: var(--green); margin-bottom: 10px;">Energie Renouvelable</h4>
+<p style="font-size: 0.95rem;"><strong>Panneaux solaires</strong> - Developpement energies propres</p>
+</div>
+</div>
+</div>
+</section>
+<!-- SLIDE 10 - V9 CONTENT -->
+<section>
+<div class="bg-cover" style="background-image: url(assets/images/img_19.jpeg)"></div>
+<div class="content content-left">
+<div class="left-panel">
+<div class="accent-bar" style="background: white; display: flex; align-items: center; justify-content: center; padding: 8px; border: 2px solid var(--green);">
+<img src="assets/images/img_02.png" alt="Logo DR Électrique" style="width: 100%; height: 100%; object-fit: contain;">
+</div>
+<h2 style="color: var(--green);">Bornes de Recharge</h2>
+<p>Installation complete de systemes de recharge pour vehicules electriques</p>
+<div class="services">
+<div class="service" style="border-color: var(--green);"><span class="service-icon">🔌</span><span>Bornes residentielles</span></div>
+<div class="service" style="border-color: var(--green);"><span class="service-icon">🏢</span><span>Bornes commerciales</span></div>
+<div class="service" style="border-color: var(--green);"><span class="service-icon">🅿️</span><span>Stationnements condos</span></div>
+<div class="service" style="border-color: var(--green);"><span class="service-icon">⚡</span><span>Bornes rapides DC</span></div>
+</div>
+</div>
+</div>
+</section>
+<!-- SLIDE 11 - V8 STYLE BACKGROUND -->
+<section>
+<div class="bg-cover" style="background-image: url(assets/images/img_25.webp)"></div>
+<div class="particles">
+<div class="particle" style="left:10%;animation-duration:15s"></div>
+<div class="particle" style="left:25%;animation-duration:12s;animation-delay:2s"></div>
+<div class="particle" style="left:40%;animation-duration:18s;animation-delay:4s"></div>
+<div class="particle" style="left:55%;animation-duration:14s;animation-delay:1s"></div>
+<div class="particle" style="left:70%;animation-duration:16s;animation-delay:3s"></div>
+<div class="particle" style="left:85%;animation-duration:13s;animation-delay:5s"></div>
+</div>
+<div class="content">
+<h2>Projets <span class="gradient-text">d'Envergure</span></h2>
+<div class="bar"></div>
+<div class="project-grid">
+<div class="project-card" style="border-top: 3px solid var(--dr);">
+<img src="assets/images/img_21.jpeg" alt="Projet DR - Installation haute tension Excel d'or et Parc aquatique" loading="lazy">
+<div class="info">
+<h4 style="color: var(--dr);">DR - Haute Tension</h4>
+<p>Excel d'or | Parc aquatique | Tour condo St-Julie | Alexis Nihon | Kahnawake</p>
+</div>
+</div>
+<div class="project-card" style="border-top: 3px solid var(--sip);">
+<img src="assets/images/img_22.jpeg" alt="Projet SIP - Installations GEM Pharma et Radio-Canada" loading="lazy">
+<div class="info">
+<h4 style="color: var(--sip);">SIP - Specialise</h4>
+<p>GEM Pharma | Haleon | Transat | Radio-Canada | SAQ | La Ronde</p>
+</div>
+</div>
+<div class="project-card" style="border-top: 3px solid var(--br);">
+<img src="assets/images/img_23.jpeg" alt="Projet BR - Tour a condo Trois-Rivieres et projets residentiels" loading="lazy">
+<div class="info">
+<h4 style="color: var(--br);">BR - Residentiel</h4>
+<p>Tour a condo Trois-Rivieres | Projets multi-residentiels</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SLIDE 12 - SYNERGIE OPÉRATIONNELLE (Restauré V8) -->
+<section>
+<div class="bg-cover" style="background-image: url(assets/images/bg_synergie.webp)"></div>
+<div class="content">
+<h2>LA <span class="gradient-text">SYNERGIE</span></h2>
+<p style="max-width:800px;text-align:center">Ensemble, nous offrons une solution <strong>clé en main</strong> unique au Québec. De l'infrastructure électrique aux systèmes critiques, de la construction à la maintenance.</p>
+<div class="bar" style="width:300px"></div>
+<p style="font-size:clamp(1.2rem, 2vw, 1.5rem);font-weight:900;margin-top:20px">UN SEUL APPEL. TROIS EXPERTISES.</p>
+</div>
+</section>
+
+<!-- SLIDE 13 - INNOVATION (Restauré V8) -->
+<section>
+<div class="bg-cover" style="background-image: url(assets/images/img_07.webp)"></div>
+<div class="content content-left">
+<div class="left-panel">
+<div class="accent-bar" style="background: white; display: flex; align-items: center; justify-content: center; padding: 8px; border: 2px solid var(--sip);">
+<img src="assets/images/img_03.png" alt="Logo SIP" style="width: 100%; height: 100%; object-fit: contain;">
+</div>
+<h2 style="color: var(--sip);">INNOVATION</h2>
+<p>Technologies de pointe pour optimiser nos opérations et offrir des solutions avant-gardistes.</p>
+<div class="services">
+<div class="service" style="border-color:var(--sip)"><span class="service-icon">🤖</span><span>Intelligence Artificielle</span></div>
+<div class="service" style="border-color:var(--sip)"><span class="service-icon">📊</span><span>Analyse Prédictive</span></div>
+<div class="service" style="border-color:var(--sip)"><span class="service-icon">🌐</span><span>IoT et Monitoring</span></div>
+<div class="service" style="border-color:var(--sip)"><span class="service-icon">📱</span><span>Applications Mobiles</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SLIDE 14 - NOTRE ÉQUIPE (Restauré V8) -->
+<section>
+<div class="bg-cover" style="background-image: url(assets/images/bg_equipe.webp)"></div>
+<div class="content content-left">
+<div class="left-panel">
+<h2>NOTRE <span class="gradient-text">ÉQUIPE</span></h2>
+<p>Plus de <strong>200 professionnels</strong> passionnés qui partagent une vision commune: l'excellence.</p>
+<div class="stats" style="justify-content:flex-start;flex-wrap:wrap;">
+<div class="stat"><span class="stat-num animated" style="font-size:1.8em">200+</span><span class="stat-label">Employés</span></div>
+<div class="stat"><span class="stat-num animated" style="font-size:1.8em">4+</span><span class="stat-label">Ingénieurs</span></div>
+<div class="stat"><span class="stat-num animated" style="font-size:1.8em">3</span><span class="stat-label">Bureaux QC</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SLIDE 15 - CHIFFRES CLÉS (Amélioré V8) -->
+<section>
+<div class="bg-cover" style="background-image: url(assets/images/bg_chiffres.webp)"></div>
+<div class="content">
+<h2>Chiffres <span class="gradient-text">Clés</span></h2>
+<div class="bar"></div>
+<div class="stats">
+<div class="stat">
+<span class="stat-num animated">35+</span>
+<span class="stat-label">Années d'expérience</span>
+</div>
+<div class="stat">
+<span class="stat-num animated">500+</span>
+<span class="stat-label">Projets réalisés</span>
+</div>
+<div class="stat">
+<span class="stat-num animated">200+</span>
+<span class="stat-label">Employés</span>
+</div>
+<div class="stat">
+<span class="stat-num animated">24/7</span>
+<span class="stat-label">Service d'urgence</span>
+</div>
+<div class="stat">
+<span class="stat-num animated">98%</span>
+<span class="stat-label">Clients satisfaits</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SLIDE 13 - V9 CONTENT -->
+<section>
+<div class="bg-cover" style="background-image: url(assets/images/bg_contact.webp)"></div>
+<div class="content">
+<h2>Contactez-<span class="gradient-text">nous</span></h2>
+<div class="bar"></div>
+<div class="contacts">
+<div class="contact" style="border-color: var(--dr);">
+<h3 style="color: var(--dr);">GROUPE DR ELECTRIQUE</h3>
+<p>📍 1420 Lionel-Boulet, Varennes, QC J3X 1P7</p>
+<p>📞 <a href="tel:+14509224000" style="color: #ffffff; text-decoration: none;">(450) 922-4000</a></p>
+<p>✉️ <a href="mailto:drservice@dreelectrique.com" style="color: #ffffff; text-decoration: none;">drservice@dreelectrique.com</a></p>
+<p>🌐 <a href="https://dreelectrique.com" target="_blank" rel="noopener noreferrer" style="color: #ffffff; text-decoration: none;">dreelectrique.com</a></p>
+</div>
+<div class="contact" style="border-color: var(--sip);">
+<h3 style="color: var(--sip);">GROUPE SIP</h3>
+<p>📍 1420 Lionel-Boulet, Varennes, QC J3X 1P7</p>
+<p>📞 <a href="tel:+14509224000" style="color: #ffffff; text-decoration: none;">(450) 922-4000</a></p>
+<p>✉️ <a href="mailto:info@groupe-sip.com" style="color: #ffffff; text-decoration: none;">info@groupe-sip.com</a></p>
+<p>🌐 <a href="https://groupe-sip.com" target="_blank" rel="noopener noreferrer" style="color: #ffffff; text-decoration: none;">groupe-sip.com</a></p>
+</div>
+<div class="contact" style="border-color: var(--br);">
+<h3 style="color: var(--br);">GROUPE BR</h3>
+<p>📍 1420 Lionel-Boulet, Varennes, QC J3X 1P7</p>
+<p>📞 <a href="tel:+14509224000" style="color: #ffffff; text-decoration: none;">(450) 922-4000</a></p>
+<p>✉️ <a href="mailto:info@habitationsbr.ca" style="color: #ffffff; text-decoration: none;">info@habitationsbr.ca</a></p>
+<p>🌐 <a href="https://www.groupebr.ca" target="_blank" rel="noopener noreferrer" style="color: #ffffff; text-decoration: none;">groupebr.ca</a></p>
+</div>
+</div>
+<p style="margin-top: 30px; text-align: center; font-size: 0.9rem; color: #888;">Une seule adresse, trois expertises</p>
+<div style="margin-top: 20px; padding: 15px 30px; background: linear-gradient(90deg, var(--dr), var(--sip), var(--br)); border-radius: 12px; text-align: center;">
+<p style="margin: 0; font-size: 1.1rem; font-weight: 700; color: white;">🚨 Service 24h/7 - Nos 3 entreprises à votre service</p>
+</div>
+</div>
+</section>
+<!-- SLIDE 14 - V8 EXTRA -->
+<section>
+<div class="bg-cover" style="background-image: url(assets/images/bg_puissance.webp)"></div>
+<div class="content content-left">
+<div class="left-panel">
+<div class="accent-bar" style="background: white; display: flex; align-items: center; justify-content: center; padding: 8px; border: 2px solid var(--dr);">
+<img src="assets/images/img_02.png" alt="Logo DR Électrique" style="width: 100%; height: 100%; object-fit: contain;">
+</div>
+<h2 style="color:var(--dr)">LA PUISSANCE</h2>
+<h3>GROUPE DR ELECTRIQUE</h3>
+<p>Specialistes des reseaux 120kV et de l'eclairage urbain. La colonne vertebrale energetique de vos projets.</p>
+<div class="services">
+<div class="service" style="border-color:var(--dr)"><span class="service-icon">&#9889;</span><span>Reseaux Haute Tension</span></div>
+<div class="service" style="border-color:var(--dr)"><span class="service-icon">&#128161;</span><span>Eclairage Municipal</span></div>
+<div class="service" style="border-color:var(--dr)"><span class="service-icon">&#128666;</span><span>Flotte Specialisee</span></div>
+</div>
+</div>
+</div>
+</section>
+<!-- SLIDE 15 - V8 EXTRA -->
+<section>
+<div class="bg-cover" style="background-image: url(assets/images/bg_capacites.webp)"></div>
+<div class="content">
+<h2>CAPACITES <span class="gradient-text">DR</span></h2>
+<div class="stats">
+<div class="stat glass"><span class="stat-num animated">120</span><span class="stat-label">kV maximum</span></div>
+<div class="stat glass"><span class="stat-num animated">50+</span><span class="stat-label">Vehicules</span></div>
+<div class="stat glass"><span class="stat-num animated">24/7</span><span class="stat-label">Urgence</span></div>
+</div>
+</div>
+</section>
+
+<!-- SLIDE 16 - NOS SERVICES -->
+<section>
+<div class="bg-cover" style="background-image: url(assets/images/handshake_network.png);"></div>
+<div class="particles"></div>
+<div class="slide-content">
+<h2 class="slide-title" style="font-size: clamp(2rem, 4vw, 3rem);">Nos Services</h2>
+<p class="slide-subtitle" style="font-size: clamp(1rem, 1.8vw, 1.3rem); margin-bottom: 2rem;">Une gamme complète pour tous vos besoins électriques</p>
+<div style="max-width: 1100px; margin: 0 auto;">
+<div class="services-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-bottom: 20px;">
+<div class="service-item glass" style="padding: 25px; border-radius: 12px; text-align: center; border-top: 3px solid var(--dr);">
+<h4 style="font-size: 1.2rem; margin-bottom: 10px; color: var(--dr);">Installation</h4>
+<p style="font-size: 0.9rem; color: rgba(255,255,255,0.8);">Résidentiel & Commercial</p>
+</div>
+<div class="service-item glass" style="padding: 25px; border-radius: 12px; text-align: center; border-top: 3px solid var(--sip);">
+<h4 style="font-size: 1.2rem; margin-bottom: 10px; color: var(--sip);">Maintenance</h4>
+<p style="font-size: 0.9rem; color: rgba(255,255,255,0.8);">Préventive & Corrective</p>
+</div>
+<div class="service-item glass" style="padding: 25px; border-radius: 12px; text-align: center; border-top: 3px solid var(--br);">
+<h4 style="font-size: 1.2rem; margin-bottom: 10px; color: var(--br);">Urgences</h4>
+<p style="font-size: 0.9rem; color: rgba(255,255,255,0.8);">Disponible 24/7</p>
+</div>
+<div class="service-item glass" style="padding: 25px; border-radius: 12px; text-align: center; border-top: 3px solid var(--dr);">
+<h4 style="font-size: 1.2rem; margin-bottom: 10px; color: var(--dr);">Domotique</h4>
+<p style="font-size: 0.9rem; color: rgba(255,255,255,0.8);">Maisons intelligentes</p>
+</div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;">
+<div class="service-item glass" style="padding: 25px; border-radius: 12px; text-align: center; border-top: 3px solid var(--sip); grid-column: 2 / 3;">
+<h4 style="font-size: 1.2rem; margin-bottom: 10px; color: var(--sip);">Industriel</h4>
+<p style="font-size: 0.9rem; color: rgba(255,255,255,0.8);">Grands projets</p>
+</div>
+<div class="service-item glass" style="padding: 25px; border-radius: 12px; text-align: center; border-top: 3px solid var(--br); grid-column: 3 / 4;">
+<h4 style="font-size: 1.2rem; margin-bottom: 10px; color: var(--br);">Consultation</h4>
+<p style="font-size: 0.9rem; color: rgba(255,255,255,0.8);">Expertise technique</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SLIDE 17 - KAHNAWAKE EXTERIOR -->
+<section>
+<img src="assets/images/img_02.png" alt="Logo DR" style="position: absolute; top: 20px; left: 20px; height: 60px; z-index: 100;">
+<div class="bg-cover" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);"></div>
+<div class="particles"></div>
+<div class="slide-content" style="padding: 20px;">
+<h2 class="slide-title" style="font-size: clamp(1.5rem, 3vw, 2.2rem); background: linear-gradient(90deg, #D4AF37, #22c55e); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Kahnawà:ke Cultural Art Center</h2>
+<div style="display: flex; justify-content: center; margin: 20px 0;">
+<img src="assets/images/kahnawake_exterior.png" alt="Kahnawake Exterior" style="max-width: 85%; max-height: 60vh; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.4);">
+</div>
+<div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+<span style="background: rgba(230,57,70,0.2); padding: 8px 16px; border-radius: 20px; border: 1px solid #E63946; color: white;">⚡ Systèmes électriques complets</span>
+<span style="background: rgba(34,197,94,0.2); padding: 8px 16px; border-radius: 20px; border: 1px solid #22c55e; color: white;">🌿 Intégration environnementale</span>
+<span style="background: rgba(212,175,55,0.2); padding: 8px 16px; border-radius: 20px; border: 1px solid #D4AF37; color: white;">🏛️ Centre culturel</span>
+</div>
+</div>
+</section>
+
+<!-- SLIDE 18 - KAHNAWAKE INTERIOR -->
+<section>
+<img src="assets/images/img_02.png" alt="Logo DR" style="position: absolute; top: 20px; left: 20px; height: 60px; z-index: 100;">
+<div class="bg-cover" style="background: linear-gradient(135deg, #2d1b0e 0%, #4a3728 50%, #1a1a2e 100%);"></div>
+<div class="particles"></div>
+<div class="slide-content" style="padding: 20px;">
+<h2 class="slide-title" style="font-size: clamp(1.5rem, 3vw, 2.2rem); background: linear-gradient(90deg, #D4AF37, #E63946); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Espaces Intérieurs d'Exception</h2>
+<div style="display: flex; justify-content: center; margin: 20px 0;">
+<img src="assets/images/kahnawake_interior.png" alt="Kahnawake Interior" style="max-width: 85%; max-height: 60vh; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.4);">
+</div>
+<div style="background: rgba(212,175,55,0.1); padding: 15px 25px; border-radius: 12px; border-left: 4px solid #D4AF37; max-width: 800px; margin: 0 auto;">
+<p style="font-style: italic; margin: 0;">"L'électricité au service de l'art et de la culture - un partenariat d'excellence avec la communauté de Kahnawà:ke"</p>
+</div>
+</div>
+</section>
+
+<!-- SLIDE 19 - STÉPHANE ROBERT -->
+<section>
+<div class="bg-cover" style="background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);"></div>
+<div class="slide-content" style="padding: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+<div style="max-width: 300px; margin-bottom: 15px;">
+<img src="assets/images/stephane_robert.png" alt="Stéphane Robert" style="width: 100%; border-radius: 8px; border: 3px solid #E63946; box-shadow: 0 8px 32px rgba(230,57,70,0.4);">
+</div>
+<h3 style="text-align: center; margin: 10px 0 5px 0; font-size: 1.4rem; background: linear-gradient(90deg, #D4AF37, #F4D03F); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Stéphane Robert</h3>
+<p style="text-align: center; color: #E63946; font-weight: 600; font-size: 0.95rem; margin-bottom: 15px;">Président, DR Électrique</p>
+<h2 style="font-size: 1.3rem; margin-bottom: 12px; color: #D4AF37; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; text-align: center;">Un leadership fondé sur l'humain</h2>
+<div style="max-width: 700px; text-align: center;">
+<p style="font-size: 0.85rem; line-height: 1.6; margin-bottom: 10px; color: rgba(255,255,255,0.9);">Stéphane a commencé au bas de l'échelle, sur le terrain. Il sait ce que ça exige : la rigueur, la disponibilité, et parfois les sacrifices. Parce qu'il a déjà été à cette place, il refuse de faire vivre aux autres ce qu'il a lui-même enduré.</p>
+<p style="font-size: 0.85rem; line-height: 1.6; margin-bottom: 10px; color: rgba(255,255,255,0.9);">Chez DR Électrique, chaque employé compte réellement. Personne n'est traité comme un numéro. Il défend un esprit de famille et une culture où l'écoute et le respect sont des réflexes.</p>
+<p style="font-size: 0.85rem; line-height: 1.6; color: rgba(255,255,255,0.9);">Même aujourd'hui, Stéphane n'hésite pas à remettre ses bottes et à se présenter sur les chantiers. Pour lui, un bon leader ne dirige pas seulement derrière un bureau : il se tient près de ses gens, dans l'action.</p>
+</div>
+</div>
+</section>
+
+
+<!-- SLIDE PROPOSITION - PÉTROLES MAURICE - SERVICES -->
+<section>
+<div class="bg-cover" style="background-image: url(assets/images/bg_synergie.webp)"></div>
+<div class="content content-left">
+<div class="left-panel" style="border-left: 4px solid #f59e0b;">
+<div class="accent-bar" style="background: linear-gradient(135deg, #f59e0b, #d97706); width: 60px; height: 60px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+<span style="font-size: 2rem;">⛽</span>
+</div>
+<h2 style="color: #f59e0b; font-size: clamp(1.5rem, 3vw, 2.2rem); margin-bottom: 5px;">NOTRE OFFRE</h2>
+<h3 style="color: white; font-weight: 700; margin-bottom: 20px;">Pour Les Pétroles Maurice</h3>
+<div class="bar" style="background: linear-gradient(90deg, #f59e0b, var(--dr), var(--sip)); width: 150px;"></div>
+<p style="margin: 20px 0; line-height: 1.8;">Solutions électriques clé en main pour vos stations-service et votre transition vers les bornes de recharge.</p>
+<div class="services">
+<div class="service" style="border-color: var(--dr);"><span class="service-icon">⚡</span><span>Installation électrique nouvelles stations</span></div>
+<div class="service" style="border-color: var(--dr);"><span class="service-icon">🔌</span><span>Raccordement Hydro-Québec haute puissance</span></div>
+<div class="service" style="border-color: var(--sip);"><span class="service-icon">🔋</span><span>Bornes de recharge EV (niveau 2 et 3)</span></div>
+<div class="service" style="border-color: var(--sip);"><span class="service-icon">🛡️</span><span>Systèmes de sécurité et surveillance 24/7</span></div>
+<div class="service" style="border-color: #f59e0b;"><span class="service-icon">💡</span><span>Éclairage LED haute efficacité</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SLIDE PROPOSITION - PÉTROLES MAURICE - AVANTAGES -->
+<section>
+<div class="bg-cover" style="background-image: url(assets/images/bg_capacites.webp)"></div>
+<div class="content">
+<h2 style="margin-bottom: 10px;">VOS <span class="gradient-text">AVANTAGES</span></h2>
+<p style="color: #f59e0b; margin-bottom: 30px;">En choisissant notre équipe</p>
+<div class="cards">
+<div class="card card-dr">
+<img src="assets/images/img_24.webp" alt="Installation électrique" loading="lazy">
+<div class="card-body">
+<h3 style="color: var(--dr);">UN SEUL APPEL</h3>
+<p><strong>Interlocuteur unique</strong></p>
+<p>De la conception à la mise en service</p>
+</div>
+</div>
+<div class="card card-sip">
+<img src="assets/images/img_07.webp" alt="Bornes EV" loading="lazy">
+<div class="card-body">
+<h3 style="color: var(--sip);">CLÉS EN MAIN</h3>
+<p><strong>Bornes EV + Installation</strong></p>
+<p>Subventions et incitatifs inclus</p>
+</div>
+</div>
+<div class="card" style="border-bottom: 3px solid #f59e0b;">
+<img src="assets/images/img_08.webp" alt="Expansion" loading="lazy">
+<div class="card-body">
+<h3 style="color: #f59e0b;">SERVICE 24/7</h3>
+<p><strong>Urgences couvertes</strong></p>
+<p>Maintenance préventive</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SLIDE 20 - CONTACT & PROCHAINES ÉTAPES -->
+<section>
+<div class="bg-cover" style="background-image: url(assets/images/dr_team_photo.png);"></div>
+<div class="particles"></div>
+<div class="slide-content" style="padding: 20px;">
+<h2 class="slide-title" style="font-size: clamp(1.5rem, 3vw, 2.2rem); margin-bottom: 10px;">Prochaines Étapes</h2>
+<p class="slide-subtitle" style="font-size: clamp(0.9rem, 1.5vw, 1.1rem); margin-bottom: 15px;">Contactez-nous pour démarrer votre projet</p>
+<div class="contact-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; max-width: 900px; margin: 0 auto;">
+<div class="contact-card glass" style="padding: 15px; border-radius: 12px; text-align: center; border-top: 3px solid var(--dr);">
+<h3 style="font-size: 1.1rem; color: var(--dr); margin-bottom: 8px;">GROUPE DR</h3>
+<p style="font-size: 0.85rem; color: rgba(255,255,255,0.9);">Électrique</p>
+</div>
+<div class="contact-card glass" style="padding: 15px; border-radius: 12px; text-align: center; border-top: 3px solid var(--sip);">
+<h3 style="font-size: 1.1rem; color: var(--sip); margin-bottom: 8px;">GROUPE SIP</h3>
+<p style="font-size: 0.85rem; color: rgba(255,255,255,0.9);">Services intégrés</p>
+</div>
+<div class="contact-card glass" style="padding: 15px; border-radius: 12px; text-align: center; border-top: 3px solid var(--br);">
+<h3 style="font-size: 1.1rem; color: var(--br); margin-bottom: 8px;">GROUPE BR</h3>
+<p style="font-size: 0.85rem; color: rgba(255,255,255,0.9);">Habitations</p>
+</div>
+</div>
+<div style="margin-top: 20px; text-align: center;">
+<div class="glass" style="display: inline-block; padding: 15px 30px; border-radius: 12px; margin-bottom: 15px;">
+<h3 class="gradient-text" style="font-size: clamp(1.2rem, 2vw, 1.5rem); margin-bottom: 10px;">Demandez votre soumission</h3>
+<p style="font-size: clamp(1rem, 1.3vw, 1.2rem); color: #fff; margin-bottom: 5px;">📞 <a href="tel:+14509224000" style="color: var(--dr); text-decoration: none; font-weight: 700;">(450) 922-4000</a></p>
+<p style="font-size: clamp(0.8rem, 1vw, 0.95rem); color: rgba(255,255,255,0.8); margin-top: 8px;">📍 1420 Lionel-Boulet, Varennes, QC J3X 1P7</p>
+<!-- QR Code Section -->
+<div id="qrcode-container" style="margin-top: 15px; display: flex; justify-content: center; align-items: center;">
+<div id="qrcode" style="background: white; padding: 10px; border-radius: 8px; display: inline-block;"></div>
+</div>
+<p style="font-size: 0.75rem; color: rgba(255,255,255,0.6); margin-top: 8px;">Scannez pour enregistrer nos coordonnées</p>
+</div>
+</div>
+<div style="margin-top: 10px; text-align: center;">
+<p class="gradient-text" style="font-size: 1.5rem; font-weight: 700;">Alliance Gagnante</p>
+<p style="font-size: 0.9rem; color: rgba(255,255,255,0.7); margin-top: 5px;">L'expertise combinée de trois leaders</p>
+</div>
+</div>
+</section>
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/reveal.min.js" integrity="sha512-TC5IA+BA/5YPBb/MJyk97ypzvXYUIlAksfuxlUXlhD7cM7y/stM4JuytDeYJlsiKxmRDV5krDyuugOoMOHwyJg==" crossorigin="anonymous"></script>
+<script>
+Reveal.initialize({
+    hash: true,
+    width: '100%',
+    height: '100%',
+    margin: 0,
+    minScale: 1,
+    maxScale: 1,
+    center: false,
+    progress: true,
+    controls: true,
+    transition: 'slide',
+    controlsTutorial: true,
+    slideNumber: 'c/t',
+    keyboard: true,
+    overview: true,
+    touch: true
+});
+</script>
+<script src="v15_features.js"></script>
+<script>
+// Register Service Worker for PWA
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/service-worker.js')
+      .then((registration) => {
+        console.log('[PWA] Service Worker registered:', registration.scope);
+      })
+      .catch((error) => {
+        console.log('[PWA] Service Worker registration failed:', error);
+      });
+  });
+}
+</script>
+
+<!-- QRCode.js Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8CdIGQg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- Generate QR Code for Contact -->
+<script>
+// Wait for both Reveal.js AND QRCode library to load
+window.addEventListener('load', function() {
+  setTimeout(function() {
+    const qrcodeElement = document.getElementById('qrcode');
+    if (!qrcodeElement || typeof QRCode === 'undefined') return;
+
+    // vCard format for contact information
+    const vcard = 'BEGIN:VCARD\nVERSION:3.0\nFN:Alliance Gagnante\nORG:Groupe DR Électrique;Groupe SIP;Groupe BR\nTEL;TYPE=WORK,VOICE:+14509224000\nADR;TYPE=WORK:;;1420 Lionel-Boulet;Varennes;QC;J3X 1P7;Canada\nEMAIL:drservice@dreelectrique.com\nURL:https://dreelectrique.com\nEND:VCARD';
+
+    // Generate QR code
+    new QRCode(qrcodeElement, {
+      text: vcard,
+      width: 150,
+      height: 150,
+      colorDark: '#0a0a12',
+      colorLight: '#ffffff',
+      correctLevel: QRCode.CorrectLevel.H
+    });
+  }, 500);
+});
+</script>
+</body>
+</html>
